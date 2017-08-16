@@ -1,88 +1,304 @@
-<!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="Keywords" content="菜鸟,菜鸟空间,王洪兴,Bruce,前端开发">
+  <meta name="description" content="菜鸟王洪兴的个人站点">
   <title>菜鸟空间</title>
-  <style media="screen">
-    body {
-      font-family: 'Segoe UI Light', 'Segoe UI', 'Microsoft Jhenghei', '微软雅黑', sans-serif;
-      font-size: 14px;
-      color: #333333;
-      text-align: center;
-    }
-
-    div,
-    h1,
-    h2,
-    a,
-    article {
-      margin: 0;
-      padding: 0;
-    }
-
-    .web-title {
-      font-size: 30px;
-      color: #666666;
-      margin-top: 30px;
-      margin-bottom: 30px;
-    }
-
-    .show-box h2 {
-      margin-top: 20px;
-      margin-bottom: 10px;
-      font-size: 20px;
-      font-weight: normal;
-      color: #999999;
-    }
-
-    .show-box a {
-      display: block;
-      color: #5FB7E9;
-      text-decoration: none;
-      line-height: 36px;
-      height: 36px;
-    }
-
-    .copyright {
-      margin-top: 80px;
-      height: 50px;
-      color: #999999;
-      font-family: Tahoma;
-      font-size: 12px;
-      text-align: center;
-    }
-  </style>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="ui/style.css">
 </head>
 
 <body>
-  <div class="cainiaozone">
-    <h1 class="web-title">菜鸟空间-记录一只“菜鸟”的成长历程</h1>
-    <article class="show-box">
-      <h2>- 记录成长历程 -</h2>
-      <a target="_blank" href="https://blog.cainiaozone.com/">我的博客</a>
-    </article>
-    <article class="show-box">
-      <h2>- 前端UI探索 -</h2>
-      <a target="_blank" href="http://cainiaozone.coding.me/D-zoneui/">框架参考</a>
-      <a target="_blank" href="https://zoneui.cainiaozone.com/">ZoneUI</a>
-    </article>
-    <article class="show-box">
-      <h2>- 原型设计展示 -</h2>
-      <a target="_blank" href="http://cainiaozone.coding.me/D-CampWX">一款营地旅游类公众号网站原型设计</a>
-      <a target="_blank" href=" http://cainiaozone.coding.me/D-VideoShop/">一款视频销售类公众号网站原型设计</a>
-      <a target="_blank" href="http://cainiaozone.coding.me/D-ShoppingApplet">一款销售类小程序原型设计</a>
-    </article>
-    <article class="show-box">
-      <h2>- 小程序作品展示 -</h2>
-      <a target="_blank" href="#">一款ToDo工具类小程序</a>
-      <a target="_blank" href="#">一款音乐播放小程序</a>
-      <a target="_blank" href="#">一款销售类小程序</a>
-    </article>
-    <div class="copyright">Copyright &copy; 2017 cainiaozone.com.All Rights Reserved.</div>
-  </div>
+  <header id="header">
+    <img id="logo" src="http://oq88a8clb.bkt.clouddn.com/cainiaozone/me.jpg" alt="me">
+    <h1>大家好，我是“菜鸟”王洪兴，你也可以叫我Bruce</h1>
+    <p class="product">
+      <a href="http://blog.cainiaozone.com/" target="_blank">博客-菜鸟空间</a>
+    </p>
+    <p class="product">
+      <a href="https://coding.net/u/cainiaozone/" target="_blank">Coding</a>
+      <a href="https://github.com/cainiaozone/" target="_blank">Github</a>
+    </p>
+  </header>
+  <main>
+    <section id="start">
+      <p><strong>“菜鸟”：</strong>大家好，这是一个神奇的个人站点，看到这里你一定觉得很简单，没关系，请继续跟着我的指引往下点击链接，会发现神奇的变化。</p>
+      <p><strong>路人甲：</strong>额？这是你的站点？这也太简单了吧，“菜鸟”还挺符合你的。</p>
+      <p><strong>路人乙：</strong>倒是看了下博客，用了个漂亮的主题，这差距也太大了吧，而且不过里面的博文有些少啊。</p>
+      <p><strong>路人丙：</strong>神奇的网站？围观！围观！</p>
+      <p><strong>“菜鸟”：</strong>假如你现在有一个产品介绍、个人展示页面、或者是一个想要和其它人分享的想法。在你将它发布到网上之前，你想要把它设计一下，让它看起来更加易读、美观。</p>
+      <p>你需要做的第一件事是什么？<a class="step" data-step="0" href="#content">戳这里试试</a></p>
+    </section>
+    <section id="content">
+      <h2>先来点内容</h2>
+      <p><strong>“菜鸟”：</strong>对了，就是内容，请先允许我做个<strong>自我介绍：</strong></p>
+      <p class="self-intro intro-box">不才中文名王洪兴，英文名Bruce Wang（对的，我的偶像是李小龙），性别男，90后，<strong>15年</strong>毕业于<strong>山东理工大学信息管理与信息系统专业</strong>，14年12月初至17年6月初在<strong>万洲嘉智信息科技有限公司</strong>从事前端开发工作，做过一些项目，也带过一年的前端团队，这是我的个人站点，还有一个博客站，也有些自己的作品放在 github 和 coding 上。</p <p><strong>路人甲：</strong>90后？简介普通……</p>
+      <p><strong>路人乙：</strong>做过一些项目？还有个人作品？</p>
+      <p><strong>路人丙：</strong>这还是很简单啊？说好的神奇呢？</p>
+      <p><strong>“菜鸟”：</strong>切莫着急，听我慢慢道来。</p>
+      <p><strong>“菜鸟”：</strong><strong>设计</strong>的目的是为了提高演示内容的易读和阅读体验，可能听起来都明白，但是内容是一个网站<strong>最主要最基本的</strong>元素，而不是将其放在最后考虑，所以要以内容优先，设计服务于内容。</p>
+      <p>比如当前你正在阅读的内容，我们需要一些样式使其变的更加易读。第一步你需要写些什么?<a class="step" data-step="1" href="#centering">点击继续</a></p>
+    </section>
+    <section id="centering">
+      <h2>让内容居中</h2>
+      <p><strong>“菜鸟”：</strong>过长的文字锻炼行所占空间比较大，浏览起来比较困难，需要更多的眼球转动，因此我们需要限制一行所要呈现的内容，以此来降低阅读疲劳。可以大大的提高可读性和吸引力。</p>
+      <pre><span class="selector">body</span> {
+  <span class="attribute">margin</span>: <span class="number">0</span> auto;
+  <span class="attribute">max-width</span>: <span class="number">60</span><span class="unit">em</span>;
+}</pre>
+      <p><strong>“菜鸟”：</strong>那么接下来打扰大家一分钟，我将继续介绍下<strong>我的工作履历：</strong></p>
+      <article class="job-history intro-box">
+        <p><strong>14年12月—17年6月</strong>就职于<strong>万洲嘉智信息科技有限公司</strong>前端开发岗位，先后参与并负责了以下项目：</p>
+        <p>1、<strong class="product-name">牛奶商城项目</strong> 基于bootstrap3.0完成Web端和移动端网站前端开发工作。</p>
+        <p>2、<strong class="product-name">公司官网项目</strong> 负责并开发了第二版纯静态官网</p>
+        <p>3、<strong class="product-name">“圆之翰”ERP项目</strong> 基于泛微软件进行二次开发，参与并完成<strong>生产运营子系统</strong>开发,基于<strong>帆软报表软件</strong>参与<strong>并完成造价部报表和统计报表的开发</strong></p>
+        <p>4、<strong class="product-name">露营地项目1.0版</strong> 负责供应链子系统组织架构设计、原型设计、前后端开发工作；负责Web端门户和微信端网站的整体组织架构设计、原型设计和前端开发工作</p>
+        <p>5、<strong class="product-name">露营地项目2.0版 </strong> 负责Web端门户和微信端网站的整体组织架构设计、原型设计和前端开发工作。</p>
+        <p>6、<strong class="product-name">电动车项目2.0版</strong> 负责Web端门户和微信端网站的原型设计和前端开发工作。</p>
+        <p>7、<strong class="product-name">康养城项目</strong> 负责一期展厅网站和门户网站前端开发；负责二期门户前端开发工作。</p>
+        <p>8、<strong class="product-name">爱游客项目</strong> 负责微信端网站的原型设计和前端开发工作。</p>
+        <p>9、<strong class="product-name">前端框架ManstroUI</strong> 负责并开发适用于公司内部的前端框架。</p>
+      </article>
+      <p><strong>路人甲：</strong>做过的项目，确实不少，经验还算丰富。</p>
+      <p><strong>路人乙：</strong>你还做过哪些个人项目？</p>
+      <p><strong>路人丙：</strong>总算有大的变化了……</p>
+      <p><strong>“菜鸟”：</strong>给文字添加了基本的P标签以后, 我们需要给文字本身添加些什么样式呢? 当然了我也将介绍自己的一些项目，<a class="step" data-step="2" href="#font-family">继续看看</a></p>
+    </section>
+    <section id="font-family">
+      <h2>没错！控制字体样式</h2>
+      <p><strong>“菜鸟”：</strong>浏览器的默认字体<code>"Times"</code>, 看起来没什么特色，不妨我们换成<strong>非衬线</strong>便于阅读的字体，比如<code>"Helvetica"</code>或者<code>"Arial"</code> 或许可以提升阅读美观度。在中文中，为了兼顾多数的浏览器，不妨使用下面这个字体选择方案。</p>
+      <pre><span class="selector">body</span> {
+  <span class="attribute">font-family</span>: Arial, 微软雅黑，<span class="string">"Microsoft yahei"</span>, <span class="string">"Hiragino Sans GB"</span>, <span class="string">"冬青黑体简体中文 w3"</span>, STXihei, 华文细黑, SimSun, 宋体, Heiti, 黑体, sans-serif;
+}</pre>
+      <p>如果你想使用衬线字体, 可以尝试 <code>"Georgia"</code>。</p>
+      <p><strong>“菜鸟”：</strong>怎么样，解决了字体是不是更加美观了？下面是一些<strong>项目的原型设计：</strong></p>
+      <article class="my-products intro-box">
+        <p>1、<a target="_blank" href="http://cainiaozone.coding.me/D-CampWX">一款营地旅游类公众号网站原型设计</a></p>
+        <p>2、<a target="_blank" href=" http://cainiaozone.coding.me/D-VideoShop/">一款视频销售类公众号网站原型设计</a></p>
+        <p>3、<a target="_blank" href="http://cainiaozone.coding.me/D-ShoppingApplet">一款销售类小程序原型设计</a></p>
+      </article>
+      <p><strong>路人甲：</strong>看起来还不错嘛，这样的原型设计基本可以啊，那么有效果页面吗，有成品吗？</p>
+      <p><strong>路人乙：</strong>确实不错，都是移动端的设计呢，为什么这个网站设计的这么难看啊……</p>
+      <p><strong>路人丙：</strong>是比开始时好看了些，但是还不怎么美观啊……</p>
+      <p><strong>“菜鸟”：</strong>下面让我们做一些更加能提高阅读体验的方法，还有展示几件作品，<a class="step" data-step="3" href="#spacing">有些期待了吧</a></p>
+    </section>
+    <section id="spacing">
+      <h2>空间</h2>
+      <p><strong>菜鸟：</strong>当一个网页看起来混乱或者拥挤的时候, 通常是没有给文字留有<strong>呼吸空间</strong>的问题。 不妨给你的内容加入些空间和距离，以此来提升视觉吸引力。</p>
+      <pre><span class="selector">body</span> {
+    <span class="attribute">line-height</span>: <span class="number">1.75</span>;
+    <span class="attribute">padding</span>: <span class="number">4</span><span class="unit">em</span> <span class="number">1</span><span class="unit">em</span>;
+  }
+
+  <span class="selector">h2</span> {
+    <span class="attribute">margin-top</span>: <span class="number">1</span><span class="unit">em</span>;
+    <span class="attribute">padding-top</span>: <span class="number">1</span><span class="unit">em</span>;
+  }
+</pre>
+      <p><strong>菜鸟：</strong>怎么样，看起来是不是酷毙了！接下来，展示几款自己做的<strong>微信小程序作品：</strong></p>
+      <ul class="wxshow intro-box">
+        <li class="hidden">
+          <img src="http://otlb9o2g4.bkt.clouddn.com/qrcode.png" alt="工具类小程序">
+          <p class="wx-name">ToDoList</p>
+          <p class="wx-desc">LeanCloud官方微信小程序示例，自己研习使用</p>
+        </li>
+        <li class="hidden">
+          <img src="http://otlb9o2g4.bkt.clouddn.com/qrcode.png" alt="娱乐类小程序">
+          <p class="wx-name">仿网易云音乐APP小程序</p>
+          <p class="wx-desc">使用<a target="_blank" href="https://binaryify.github.io/NeteaseCloudMusicApi/">网易云音乐 NodeJs版开放的API</a>，并发布到 Leancloud进行调用，服务端调用地址：<a href="http://zonemusic.leanapp.cn/">http://zonemusic.leanapp.cn/</a></p>
+        </li>
+        <li>
+          <img src="http://oq88a8clb.bkt.clouddn.com/cainiaozone/%E5%B0%8F%E7%A8%8B%E5%BA%8F-%E5%86%A0%E5%8E%BF%E4%B8%89%E5%85%83%E5%A5%B6%E7%B2%89%E4%B8%93%E5%8D%96.jpg" alt="销售类小程序">
+          <p class="name">冠县三元奶粉专卖</p>
+          <p class="wx-desc">完全自主开发设计，但是目前仅供演示使用，后期会补充完善功能模块。</p>
+        </li>
+      </ul>
+      <p><strong>路人甲：</strong>有些作品能够查看确实不错，看来你的能力还可以啊，那么你都会什么技能啊？</p>
+      <p><strong>路人乙：</strong>微信小程序现在确实很火的，有几个demo例子确实不错。</p>
+      <p><strong>路人丙：</strong>这次看起来不那么压抑了，但是效果还是差的多啊……</p>
+      <p><strong>“菜鸟”：</strong>别停下，让我们继续做一些改变，我也详细介绍下自己的技能包，<a class="step" data-step="4" href="#color-contrast">让我们继续吧~</a></p>
+    </section>
+    <section id="color-contrast">
+      <h2>颜色 &amp; 对比</h2>
+      <p><strong>“菜鸟”：</strong>白色背景上配上纯黑色的文字会不会显的太刺激和突兀，选择一个灰度稍微低点的黑色，使页面阅读起来更加<strong>舒适</strong>。</p>
+      <pre><span class="selector">body</span> {
+  <span class="attribute">color</span>: <span class="number">#555</span>;
+}</pre>
+      <p>使用适当的<strong>对比</strong>, 可以凸现那些<strong>重点</strong>的词语。</p>
+      <pre><span class="selector">h1</span>,
+<span class="selector">h2</span>,
+<span class="selector">strong</span> {
+  <span class="attribute">color</span>: <span class="number">#333</span>;
+}</pre>
+      <p><strong>“菜鸟”：</strong>等等！是不是觉得背景还不够酷，我们也可以在<a href="http://hao.uisdc.com/" target="_blank" style="color:#333">hao.uisdc.com</a> <strong>资源下载</strong>中找到一些纹理网站给背景设置点铺满屏幕的纹理。</p>
+      <article class="my-skills intro-box">
+        <p><strong>“菜鸟”：接下来我来介绍下自己的技能包，不要见笑哦：</strong></p>
+        <p>1、需求分析（XMind、Axure）</p>
+        <p>2、数据库设计（熟悉Oracle、Sql Server）</p>
+        <p>3、原型设计（使用Axure、MockPlus做过网站门户和微信公众号WebAPP的原型设计）</p>
+        <p>4、前端静态页开发（必备技能：Html+CSS+JS，熟悉Bootstrap、jQuery、EasyUI）</p>
+        <p>5、项目动态化联调（Java）</p>
+        <p>6、基于泛微软件的类ERP的二次开发</p>
+        <p>7、基于帆软报表工具的报表开发</p>
+        <p>8、探索前端框架，搭建自己的 ZoneUI <a target="_blank" href="https://zoneui.cainiaozone.com/">【https://zoneui.cainiaozone.com/】</a></p>
+        <p>9、熟悉微信小程序开发</p>
+      </article>
+      <p><strong>路人甲：</strong>技能会的还不少，还开发自己的前端框架 ZoneUI？</p>
+      <p><strong>路人乙：</strong>现在网站看上去还可以吧，当然了还有很多需要优化的地方。</p>
+      <p><strong>路人丙：</strong>懂得还不少呢，可是现在的网站还是有些差强人意啊。</p>
+      <p><strong>“菜鸟”：</strong>虽然大部分的网页已经被有效的改进，但是这些代码、项目和技能介绍还是有些混乱和格格不入，就像桌子上那些随处摆放的物件一样，接下来给它添加一些装饰将它们合理收纳，保持视觉平衡，<a class="step" data-step="5" href="#balance">快看看效果吧</a></p>
+    </section>
+    <section id="balance">
+      <h2>视觉平衡</h2>
+      <p><strong>“菜鸟”：</strong>通过一些基本的样式调整就可以带来页面的视觉平衡。</p>
+      <pre><span class="selector">code</span>,
+<span class="selector">pre</span> {
+  <span class="attribute">background</span>: <span class="number">#fff</span>;
+}
+
+<span class="selector">code</span> {
+  <span class="attribute">padding</span>: <span class="number">2</span>px <span class="number">4</span>px;
+  <span class="attribute">vertical-align</span>: text-bottom;
+}
+
+<span class="selector">pre</span> {
+  <span class="attribute">padding</span>: <span class="number">1</span>em;
+}</pre>
+      <p><strong>“菜鸟”：</strong>关于前端框架确实也有些研究，所说目前做的还有些粗糙，但是一直再继续呢。下面是我的资料与 ZoneUI：</p>
+      <article class="intro-box">
+        <p>1、<a target="_blank" href="http://cainiaozone.coding.me/D-zoneui/">前端框架参考</a></p>
+        <p>2、<a target="_blank" href="https://zoneui.cainiaozone.com/">前端框架ZoneUI</a></p>
+      </article>
+      <p><strong>路人甲：</strong>现在前端框架这么多，为什么还要自己造轮子？</p>
+      <p><strong>路人乙：</strong>我觉得做的还算可以，不过相比市场上成熟的框架，还差了很多……</p>
+      <p><strong>路人丙：</strong>我觉得自己造轮子也是可以的，毕竟能够复习自己的前端技能吗？</p>
+      <p><strong>“菜鸟”：</strong>我开发的这个ZoneUI，目前主要是参考了Bootstrap的基础架构，然后总结自己之前的项目而搭建的，一来熟悉框架的系统性知识，二来还能复习总结之前的内容，当然以后我还会继续优化的。</p>
+      <p><strong>路人甲：</strong>恩，不错，有想法？那么你都是在哪里学习前端知识的呢？</p>
+      <p><strong>“菜鸟”：</strong>接下来我会介绍下自己学习的途径，还有当前这个网站还有需要优化的，我们继续~</p>
+      <p><strong>“菜鸟”：</strong>对于一些链接，为了方便点击和区分，我们不妨给他们提升一些识别度，<a class="step" data-step="6" href="#primary-color">快去看看~</a></p>
+    </section>
+    <section id="primary-color">
+      <h2>主色</h2>
+      <p><strong>“菜鸟”：</strong>很多品牌都有自己的<strong>主色调</strong>以此来作为视觉的标识，在一个网站上，这个主色可以运用到用来强调互动的颜色，比如<strong>链接</strong>。</p>
+      <pre><span class="selector">a</span> {
+  <span class="attribute">color</span>: <span class="number">#e81c4f</span>;
+}</pre>
+      <p><strong>“菜鸟”：</strong>我目前的主要学习途径还是浏览各类的前端网站：</p>
+      <article class="intro-box">
+        <p><strong>前端基础知识学习和进阶：</strong></p>
+        <p>1、<a target="_blank" href="http://w3school.com.cn/">W3school</a></p>
+        <p>2、<a target="_blank" href="http://www1.qdfuns.com/course.php">W3Cfuns</a></p>
+        <p><strong>浏览大公司的技术站点：</strong></p>
+        <p>1、<a target="_blank" href="http://taobaofed.org/">淘宝前端团队(FED)</a></p>
+        <p>2、<a target="_blank" href="http://www.alloyteam.com/">腾讯AlloyTeam</a></p>
+        <p>3、<a target="_blank" href="https://aotu.io/index.html">京东凹凸实验室</a></p>
+        <p>4、<a target="_blank" href="http://fex.baidu.com/">百度FEX</a></p>
+        <p>5、<a target="_blank" href="https://75team.com/">360奇舞团</a></p>
+        <p><strong>知名视频站点：</strong></p>
+        <p>1、<a target="_blank" href="http://www.imooc.com/">慕课网</a></p>
+        <p>2、<a target="_blank" href="https://ke.qq.com/">腾讯课堂</a></p>
+        <p>3、<a target="_blank" href="https://www.qidianla.com/">起点学院 </a></p>
+      </article>
+      <p><strong>“菜鸟”：</strong>当然还有很多大牛的博客站，各类设计网站，这里就不一一列举，以后会单独整理一份清单~</p>
+      <p><strong>路人甲：</strong>恩，这些网站确实不错，那么你还有那些技术积累或者打算学习什么？</p>
+      <p><strong>路人乙：</strong>哈哈，先收藏了这些网站，还有你的那份清单要尽快整理出来啊</p>
+      <p><strong>路人丙：</strong>现在的网站确实好看些了，不知道是否还可在美化些呢？</p>
+      <p><strong>“菜鸟”：</strong>恩恩，一直在学习，清单也会尽快整理到博客中，关于本网站为了保证视觉平衡，我们需要增加一些辅助颜色，<a class="step" data-step="7" href="#secondary-colors">继续看看</a>。</p>
+    </section>
+    <section id="secondary-colors">
+      <h2>次要颜色</h2>
+      <p><strong>“菜鸟”：</strong>主色调可以通过一些微妙的辅助色来提升整体的视觉表现，而这些辅助颜色可以运用到边框、背景、效果或者文本。</p>
+      <pre><span class="selector">body</span> {
+  <span class="attribute">color</span>: <span class="number">#566b78</span>;
+}
+
+<span class="selector">code</span>,
+<span class="selector">pre</span> {
+  <span class="attribute">background</span>: <span class="number">#ffffff</span>;
+  <span class="attribute">border-bottom</span>: <span class="number">1</span><span class="unit">px</span> solid <span class="number">#d8dee9</span>;
+  <span class="attribute">color</span>: <span class="number">#a7adba</span>;
+}
+
+<span class="selector">pre</span> {
+  <span class="attribute">border-left</span>: <span class="number">2</span><span class="unit">px</span> solid <span class="number">#69c</span>;
+}</pre>
+      <p><strong>“菜鸟”：</strong>前端技术方面，近期一直围绕<strong> Node.js 和 Vue.js</strong>学习，以后也会整理并发布相应的作品出来。</p>
+      <p><strong>“菜鸟”：</strong>产品方面，也一直在<strong>人人都是产品经理</strong>和<strong>起点学院</strong>里学习相关知识。</p>
+      <p><strong>路人甲：</strong>恩恩，不错，有一定的规划，怎么联系你？</p>
+      <p><strong>路人乙：</strong>针对不错么，希望你能够更上一层楼，加油~</p>
+      <p><strong>路人丙：</strong>这么一路看看，确实够挺好的，你真的很不错嘛，不知道是否还有惊喜？</p>
+      <p><strong>“菜鸟”：</strong>恩恩，添加了不少的细节效果，让我们再改变些其它，<a class="step" data-step="9" href="#custom-font">看看还有什么？</a></p>
+    </section>
+    <section id="images">
+      <h2>
+          <img src="http://image.uisdc.com/wp-content/uploads/2016/10/images.png" alt="Spongebob rainbow meme saying 'Images'">
+        </h2>
+      <p><strong>“菜鸟”：</strong>图形和图标可以用来装饰你的网站，辅助你的内容，或者更有效传达网站的信息。</p>
+      <p><strong>“菜鸟”：</strong>让我们给头部添加一个从图库导航<a href="http://hao.uisdc.com/photo/" target="_blank">http://hao.uisdc.com/</a>下载的背景图片。</p>
+      <p><strong>“菜鸟”：</strong>图片地址：http://www.resplashed.com/img/a16964955aee.jpg</p>
+      <pre><span class="selector">header</span> {
+  <span class="attribute">background-color</span>: <span class="number">#263d36</span>;
+  <span class="attribute">background-image</span>: url(<span class="string">"http://image.uisdc.com/wp-content/uploads/2016/10/header.jpg"</span>);
+  <span class="attribute">background-position</span>: center top;
+  <span class="attribute">background-repeat</span>: no-repeat;
+  <span class="attribute">background-size</span>: cover;
+  <span class="attribute">line-height</span>: <span class="number">1.2</span>;
+  <span class="attribute">padding</span>: <span class="number">10</span><span class="unit">vw</span> <span class="number">2</span><span class="unit">em</span>;
+  <span class="attribute">text-align</span>: center;
+}</pre>
+      <p><strong>“菜鸟”：</strong>然后添加一个<strong>logo</strong>，哈哈，就用我的头像吧，虽然说不是帅哥~</p>
+      <pre><span class="selector">header img</span> {
+  <span class="attribute">display</span>: inline-block;
+  <span class="attribute">height</span>: <span class="number">120</span><span class="unit">px</span>;
+  <span class="attribute">vertical-align</span>: top;
+  <span class="attribute">width</span>: <span class="number">120</span><span class="unit">px</span>;
+}</pre>
+      <p><strong>“菜鸟”：</strong>让我们再添加一些文字样式</p>
+      <pre><span class="selector">header h1</span> {
+  <span class="attribute">color</span>: white;
+  <span class="attribute">font-size</span>: <span class="number">2.5</span><span class="unit">em</span>;
+  <span class="attribute">font-weight</span>: <span class="number">300</span>;
+}
+
+<span class="selector">header a</span> {
+  <span class="attribute">border</span>: <span class="number">1</span><span class="unit">px</span> solid <span class="number">#e81c4f</span>;
+  <span class="attribute">border-radius</span>: <span class="number">290486</span><span class="unit">px</span>;
+  <span class="attribute">color</span>: white;
+  <span class="attribute">font-size</span>: <span class="number">0.8</span><span class="unit">em</span>;
+  <span class="attribute">letter-spacing</span>: <span class="number">0.2</span><span class="unit">em</span>;
+  <span class="attribute">padding</span>: <span class="number">1</span><span class="unit">em</span> <span class="number">2</span><span class="unit">em</span>;
+  <span class="attribute">text-transform</span>: uppercase;
+  <span class="attribute">text-decoration</span>: none;
+  <span class="attribute">transition</span>: none <span class="number">200</span><span class="unit">ms</span> ease-out;
+  <span class="attribute">transition-property</span>: color, background;
+}
+
+<span class="selector">header a:hover</span> {
+  <span class="attribute">background</span>:  <span class="number">#e81c4f</span>;
+  <span class="attribute">color</span>: white;
+}</pre>
+      <p><strong>“菜鸟”：</strong>Duang！魔法发生了！赶紧回顶部看看效果吧。<a href="#header">查看顶部效果</a>!</p>
+      <article class="intro-box">
+        <p><strong>“菜鸟”：最后附上我的联系方式：</strong></p>
+        <p><strong>邮箱：</strong><a href="mailto:cainiaozone@163.com">cainiaozone@163.com</a></p>
+        <p><strong>博客：</strong><a href="http://weibo.com/p/1005056234131864">菜鸟空间Bruce</a></p>
+        <p>微信公众号【菜鸟空间】，欢迎扫码关注~</p>
+        <img src="http://oq88a8clb.bkt.clouddn.com/cainiaozone/%E8%8F%9C%E9%B8%9F%E7%A9%BA%E9%97%B4%E5%85%AC%E4%BC%97%E5%8F%B7.jpg" alt="菜鸟空间公众号">
+      </article>
+      <p><strong>路人甲：</strong>恩，总体来说确实不错</p>
+      <p><strong>路人乙：</strong>对你很期待啊，看看以后还有什么有意思的吗？</p>
+      <p><strong>路人丙：</strong>这个创意是你的吗？很新颖，在制作网站的同时，还宣传了下自己，很有意思。</p>
+      <p><strong>“菜鸟”：</strong>在短短的几分钟内，我们就设计了一个像样的网页，这个灵感来源于<a href="http://jgthms.com/" target="_blank">作者<strong>@jgthms</strong></a>和<a href="http://www.uisdc.com/" target="_blank">翻译 <strong>优设网</strong></a>，非常的感谢他们。</p>
+      <p><strong>“菜鸟”：</strong>然后我以此为基础丰富了一下，把自己的介绍加了进去，哈哈，大家不要见笑。</p>
+    </section>
+  </main>
+  <footer>
+    Copyright &copy; 2017 cainiaozone.com.All Rights Reserved.
+  </footer>
+  <a id="visited" href="#share">页面太简单？直接查看最终效果</a>
+  <script type="text/javascript" src="ui/my.js"></script>
+
 </body>
 
 </html>
