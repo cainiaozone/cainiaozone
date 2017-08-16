@@ -6,7 +6,7 @@
   <meta name="description" content="菜鸟王洪兴的个人站点">
   <title>菜鸟空间</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" type="text/css" href="ui/style.css">
+  <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 
 <body>
@@ -232,7 +232,7 @@
     </section>
     <section id="images">
       <h2>
-          <img src="http://image.uisdc.com/wp-content/uploads/2016/10/images.png" alt="Spongebob rainbow meme saying 'Images'">
+          <img src="http://oq88a8clb.bkt.clouddn.com/cainiaozone/images.png" alt="Spongebob rainbow meme saying 'Images'">
         </h2>
       <p><strong>“菜鸟”：</strong>图形和图标可以用来装饰你的网站，辅助你的内容，或者更有效传达网站的信息。</p>
       <p><strong>“菜鸟”：</strong>让我们给头部添加一个从图库导航<a href="http://hao.uisdc.com/photo/" target="_blank">http://hao.uisdc.com/</a>下载的背景图片。</p>
@@ -297,7 +297,64 @@
     Copyright &copy; 2017 cainiaozone.com.All Rights Reserved.
   </footer>
   <a id="visited" href="#share">页面太简单？直接查看最终效果</a>
-  <script type="text/javascript" src="ui/my.js"></script>
+  <script type="text/javascript">
+    var steps = document.querySelectorAll('.step');
+    var body = document.querySelector('body');
+    var html = document.querySelector('html');
+
+    for (var i = 0; i < steps.length; i++) {
+      var element = steps[i];
+      element.onclick = function(event) {
+        var number = this.dataset.step;
+        var target = this.href;
+        addStep(number, target);
+      }
+    };
+
+    function removeVisited() {
+      if (document.getElementById('visited')) {
+        body.removeChild(document.getElementById('visited'));
+      }
+    }
+
+    function addStep(number, target) {
+      html.className += ' step' + number;
+
+      removeVisited();
+
+      if (target !== '') {
+        var id = target.split('#')[1];
+        document.getElementById(id).className = 'animate';
+      }
+
+      // if (number === '7') {
+      //   loadGoogleFont();
+      // }
+    }
+
+    visited.onclick = function() {
+      // loadGoogleFont();
+      for (var i = 0; i < 11; i++) {
+        html.className += ' step' + i;
+      }
+      removeVisited();
+    }
+
+    WebFontConfig = {
+      google: {
+        families: ['Roboto:300,400,500']
+      }
+    };
+
+    function loadGoogleFont() {
+      (function(d) {
+        var wf = d.createElement('script'),
+          s = d.scripts[0];
+        wf.src = 'ui/webfont';
+        s.parentNode.insertBefore(wf, s);
+      })(document);
+    }
+  </script>
 
 </body>
 
